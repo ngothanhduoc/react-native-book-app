@@ -74,7 +74,7 @@ function BookListScreen({ navigation }) {
       position: 'absolute',
       alignItems: 'center',
       justifyContent: 'flex-end',
-      backgroundColor: colors.background,
+      backgroundColor: colors.headerColor,
       height: interpolate(scrollY.value, [-HEADER, 0], [HEADER * 2, HEADER], 'clamp'),
       elevation: ios ? undefined : interpolate(scrollY.value, [HEADER - navbar, HEADER - navbar + 30], [0, 10], 'clamp'),
       shadowOpacity: ios ? interpolate(scrollY.value, [HEADER - navbar, HEADER - navbar + 30], [0, 0.75], 'clamp') : undefined,
